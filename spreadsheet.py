@@ -25,39 +25,14 @@ import imghdr
 import requests
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from pdf2image import convert_from_path
-# import keyboard
-
-
-# URL = 'https://www.way2sms.com/api/v1/sendCampaign'
-
-
-# def sendPostRequest(reqUrl, apiKey, secretKey, useType, phoneNo, senderId, textMessage, number_to_send, msg):
-
-#     req_params = {
-
-#         'apikey': 'DF5Z7DF4ZOQMLT2ZLKSQG3Q1HVVY63YV',
-
-#         'secret': 'O9PUY8CXTS85S7KE',
-
-#         'usetype': 'stage',
-
-#         'phone': number_to_send,
-
-#         'message': msg,
-
-#         'senderid': 'Spreadsheet'
-
-#     }
-
-#     return requests.post(reqUrl, req_params)
 
 URL = "http://sms.tozzutechnology.com/rest/services/sendSMS/sendGroupSms"
 
 
 def sendPostRequest(number, msg):
 
-    querystring = {"AUTH_KEY": "de5b88a38524556f59cbcbc1f54fa8", "message": msg,
-                   "senderId": "honeym", "routeId": "1", "mobileNos": number, "smsContentType": "english"}
+    querystring = {"AUTH_KEY": "use your own key", "message": msg,
+                   "senderId": "pinatx", "routeId": "1", "mobileNos": number, "smsContentType": "english"}
 
     headers = {
         'Cache-Control': "no-cache"
